@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicios</title>
+    <link rel="stylesheet" href="css/output.css">
+</head>
+<body>
+    <!-- Exercicio 1 -->
+    <!-- Fazer um container verde virar azul quando chegar ao breakpoint MD -->
+    <div class="container bg-green-600 md:bg-blue-600 mx-auto p-4 my-4 border-black border-2 text-white text-center font-bold">
+        <h1>Ex - 1</h1>
+    </div>
+
+    <!-- Exercicio 2 -->
+    <!-- Criar um container com tres div no HTML, deixar as divs internas inline utilizando display, todas devem ter backgrounds diferentes -->
+
+    <div class="container mx-auto p-4 my-4 bg-red-400 border-black border-2 rounded">
+        <div class="inline-block bg-blue-600 p-4 m-2 border-1 border-black rounded">Ex - 2</div>
+        <div class="inline-block bg-green-600 p-4 m-2 border-1 border-black rounded">Ex - 2</div>
+        <div class="inline-block bg-yellow-600 p-4 m-2 border-1 border-black rounded">Ex - 2</div>
+    </div>
+
+    <!-- Exercicio 3 -->
+    <!-- Criar um container com uma altura determinada e posicionar uma div dentro deste container no canto inferior direito -->
+
+    <div class="container h-25 w-50 bg-purple-800 mx-auto border-2 border-black relative rounded-2xl">
+        <div class="absolute right-0 bottom-0 bg-pink-700 p-4 rounded-2xl border-1 border-black font-medium">Ex - 3</div>
+    </div>
+
+    <!-- Exercicio 4 -->
+    <!-- Criar 3 elementos, cada um deve sobrepor o outro no HTML, por meio do z-index, ter cores diferentes -->
+
+    <div class="container bg-red-700 relative mx-auto my-4 h-17 w-50 p-2 border-2 border-black rounded-2xl">
+        <div class="bg-blue-700 absolute p-2 z-10 border-1 border-black">1</div>
+        <div class="bg-green-700 absolute m-1 p-2 z-5 border-1 border-black">2</div>
+        <div class="bg-yellow-700 absolute m-2 p-2 border-1 border-black">3</div>
+    </div>
+
+    <!-- Exercicio 5 -->
+    <!-- Criar um container flex, layout de colunas, seis itens com cores diferentes -->
+    
+    <div class="flex flex-col border-black border-2 mx-auto w-50">
+        <div class="bg-red-700 p-6 m-4 border-1 border-black">1</div>
+        <div class="bg-blue-700 p-6 m-4 border-1 border-black">2</div>
+        <div class="bg-green-700 p-6 m-4 border-1 border-black">3</div>
+        <div class="bg-purple-800 p-6 m-4 border-1 border-black">4</div>
+        <div class="bg-yellow-700 p-6 m-4 border-1 border-black">5</div>
+        <div class="bg-pink-700 p-6 m-4 border-1 border-black">6</div>
+    </div>
+
+    <!-- Exercicio 6 -->
+    <!-- Criar um container flex, o container deve inverter a ordem depois da resolução lg -->
+     
+    <div class="flex container flex-1 bg-red-400 mx-auto p-5 m-4 flex-col lg:mx-auto lg:p-5 lg:m-4 lg:flex-col">
+        <div class="bg-red-500 flex p-6 m-3 lg:order-3 lg:bg-blue-500">1</div>
+        <div class="bg-red-600 flex p-6 m-3 lg:order-2 lg:bg-blue-600" >2</div>
+        <div class="bg-red-700 flex p-6 m-3 lg:order-1 lg:bg-blue-700">3</div>
+    </div>
+
+    <!-- Exercicio 7 -->
+    <!-- Crie um container grid com 3 colunas e ao total 9 itens, os itens precisam ter cores alternantes -->
+
+    <div class="grid grid-cols-3 p-5 m-4 bg-orange-500">
+        <div class="bg-red-900">1</div>
+        <div class="bg-blue-900">2</div>
+        <div class="bg-red-900">3</div>
+        <div class="bg-blue-900">4</div>
+        <div class="bg-red-900">5</div>
+        <div class="bg-blue-900">6</div>
+        <div class="bg-red-900">7</div>
+        <div class="bg-blue-900">8</div>
+        <div class="bg-red-900">9</div>
+    </div>
+
+    <!-- Exercicio 8 -->
+    <!-- Criar uma estrutura grid semelhante a um site, separado em duas colunas, primeira é a barra de navegação e a segunda é o conteudo, deve ter 4 colunas sendo que a segunda representa 3 desses, barra de navegação supeior com o tamanho de todas as colunas -->
+
+    <div class="grid grid-cols-4 m-4">
+        <div class="col-span-4 bg-red-900 p-2 text-white border-2 border-black">
+            <p>Barra de navegação superior</p>
+        </div>
+        <div class="col-span-1 bg-red-500 p-2 border-1 border-black">
+            <ul>
+                <li><a href="#" class="hover:font-bold">Produtos</a></li>
+                <li><a href="#" class="hover:font-bold">Categoria</a></li>
+                <li><a href="#" class="hover:font-bold">Novidades</a></li>
+            </ul>
+        </div>
+        <div class="col-span-3 bg-red-700 p-2 border-1 border-black">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita deserunt, dignissimos ea, aspernatur temporibus saepe quam ullam magnam, at voluptate cumque nobis quae asperiores dolorem quidem quisquam facilis. Odio, corporis?
+            Nam exercitationem corporis maxime unde laboriosam? Est unde, debitis, eius velit illo consectetur sit architecto error odit voluptates, ratione facilis voluptate reiciendis dolorem autem. Aperiam omnis dolor reprehenderit nesciunt dolore?
+            Cum dicta perspiciatis error ullam harum dolorum odio illum, placeat amet vel repellendus, nisi ducimus facilis asperiores quam at aperiam, consequatur reprehenderit ad delectus porro laudantium animi dignissimos. Repellendus, modi!
+            Asperiores, alias esse! Ab necessitatibus facere mollitia soluta enim! Reiciendis totam possimus labore commodi, voluptate sed. Necessitatibus eum cum placeat, consectetur deserunt explicabo doloribus quos, alias quasi nobis repellat aperiam.
+            Cumque, ex. Sunt quae debitis obcaecati maxime dolor expedita nulla molestiae porro eveniet illum totam a unde facilis, iste, alias nesciunt praesentium! Quae officiis repudiandae at ea asperiores laborum architecto.</p>
+        </div>
+    </div>
+
+    <!-- Exercicio 9 -->
+    <!-- Criar um grid com duas colunas e quatro itens, colocar um gap de 6 neste grid -->
+
+    <div class="grid grid-cols-2 gap-6 m-4 border-1 border-black p-5">
+        <div class="bg-amber-500 p-2 border-2 border-black text-white">1</div>
+        <div class="bg-amber-700 p-2 border-2 border-black text-white">2</div>
+        <div class="bg-amber-500 p-2 border-2 border-black text-white">3</div>
+        <div class="bg-amber-700 p-2 border-2 border-black text-white">4</div>
+    </div>
+</body>
+</html>

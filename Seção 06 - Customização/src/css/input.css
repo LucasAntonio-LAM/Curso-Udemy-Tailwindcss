@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+
+@theme {
+    --breakpoint-tablet: 768px; /* Criando um novo Breakpoint */
+    --color-black: #010101; /* Modificando uma cor existente */
+    --color-red-900: #A83246; /* Modificando uma cor existente */
+    --color-new-blue: #243c5a; /* Adicionando uma cor */
+    --color-gray-900: #999;
+}
