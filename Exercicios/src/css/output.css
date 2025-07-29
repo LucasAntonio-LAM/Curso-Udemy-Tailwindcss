@@ -7,6 +7,7 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-red-300: oklch(80.8% 0.114 19.571);
     --color-red-400: oklch(70.4% 0.191 22.216);
     --color-red-500: oklch(63.7% 0.237 25.331);
     --color-red-600: oklch(57.7% 0.245 27.325);
@@ -15,10 +16,13 @@
     --color-orange-500: oklch(70.5% 0.213 47.604);
     --color-amber-500: oklch(76.9% 0.188 70.08);
     --color-amber-700: oklch(55.5% 0.163 48.998);
+    --color-yellow-500: oklch(79.5% 0.184 86.047);
     --color-yellow-600: oklch(68.1% 0.162 75.834);
     --color-yellow-700: oklch(55.4% 0.135 66.442);
+    --color-yellow-900: oklch(42.1% 0.095 57.708);
     --color-green-600: oklch(62.7% 0.194 149.214);
     --color-green-700: oklch(52.7% 0.154 150.069);
+    --color-blue-300: oklch(80.9% 0.105 251.813);
     --color-blue-500: oklch(62.3% 0.214 259.815);
     --color-blue-600: oklch(54.6% 0.245 262.881);
     --color-blue-700: oklch(48.8% 0.243 264.376);
@@ -29,11 +33,9 @@
     --color-black: #000;
     --color-white: #fff;
     --spacing: 0.25rem;
-    --font-weight-extralight: 200;
     --font-weight-medium: 500;
     --font-weight-bold: 700;
     --radius-2xl: 1rem;
-    --radius-4xl: 2rem;
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
   }
@@ -202,21 +204,6 @@
   .z-10 {
     z-index: 10;
   }
-  .order-1 {
-    order: 1;
-  }
-  .order-2 {
-    order: 2;
-  }
-  .order-3 {
-    order: 3;
-  }
-  .order-first {
-    order: -9999;
-  }
-  .order-last {
-    order: 9999;
-  }
   .col-span-1 {
     grid-column: span 1 / span 1;
   }
@@ -280,20 +267,11 @@
   .h-17 {
     height: calc(var(--spacing) * 17);
   }
-  .h-20 {
-    height: calc(var(--spacing) * 20);
-  }
   .h-25 {
     height: calc(var(--spacing) * 25);
   }
   .w-50 {
     width: calc(var(--spacing) * 50);
-  }
-  .w-100 {
-    width: calc(var(--spacing) * 100);
-  }
-  .flex-0 {
-    flex: 0;
   }
   .flex-1 {
     flex: 1;
@@ -316,8 +294,11 @@
   .flex-col {
     flex-direction: column;
   }
-  .flex-row {
-    flex-direction: row;
+  .items-center {
+    align-items: center;
+  }
+  .justify-center {
+    justify-content: center;
   }
   .gap-6 {
     gap: calc(var(--spacing) * 6);
@@ -349,6 +330,12 @@
   .bg-amber-700 {
     background-color: var(--color-amber-700);
   }
+  .bg-blue-300 {
+    background-color: var(--color-blue-300);
+  }
+  .bg-blue-500 {
+    background-color: var(--color-blue-500);
+  }
   .bg-blue-600 {
     background-color: var(--color-blue-600);
   }
@@ -357,9 +344,6 @@
   }
   .bg-blue-900 {
     background-color: var(--color-blue-900);
-  }
-  .bg-gray-500 {
-    background-color: var(--color-gray-500);
   }
   .bg-green-600 {
     background-color: var(--color-green-600);
@@ -376,6 +360,9 @@
   .bg-purple-800 {
     background-color: var(--color-purple-800);
   }
+  .bg-red-300 {
+    background-color: var(--color-red-300);
+  }
   .bg-red-400 {
     background-color: var(--color-red-400);
   }
@@ -391,14 +378,17 @@
   .bg-red-900 {
     background-color: var(--color-red-900);
   }
-  .bg-white {
-    background-color: var(--color-white);
+  .bg-yellow-500 {
+    background-color: var(--color-yellow-500);
   }
   .bg-yellow-600 {
     background-color: var(--color-yellow-600);
   }
   .bg-yellow-700 {
     background-color: var(--color-yellow-700);
+  }
+  .bg-yellow-900 {
+    background-color: var(--color-yellow-900);
   }
   .p-2 {
     padding: calc(var(--spacing) * 2);
@@ -441,20 +431,6 @@
       }
     }
   }
-  .hover\:underline {
-    &:hover {
-      @media (hover: hover) {
-        text-decoration-line: underline;
-      }
-    }
-  }
-  .hover\:-underline-offset-1 {
-    &:hover {
-      @media (hover: hover) {
-        text-underline-offset: calc(1px * -1);
-      }
-    }
-  }
   .md\:bg-blue-600 {
     @media (width >= 48rem) {
       background-color: var(--color-blue-600);
@@ -473,16 +449,6 @@
   .lg\:order-3 {
     @media (width >= 64rem) {
       order: 3;
-    }
-  }
-  .lg\:order-first {
-    @media (width >= 64rem) {
-      order: -9999;
-    }
-  }
-  .lg\:order-last {
-    @media (width >= 64rem) {
-      order: 9999;
     }
   }
   .lg\:m-4 {
