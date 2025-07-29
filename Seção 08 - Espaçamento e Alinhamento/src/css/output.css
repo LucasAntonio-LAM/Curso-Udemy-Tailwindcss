@@ -30,6 +30,8 @@
     --color-purple-600: oklch(55.8% 0.288 302.321);
     --color-purple-700: oklch(49.6% 0.265 301.924);
     --color-purple-900: oklch(38.1% 0.176 304.987);
+    --color-pink-300: oklch(82.3% 0.12 346.018);
+    --color-pink-900: oklch(40.8% 0.153 2.432);
     --color-black: #000;
     --spacing: 0.25rem;
     --default-font-family: var(--font-sans);
@@ -242,6 +244,18 @@
   .place-content-start {
     place-content: start;
   }
+  .place-items-center {
+    place-items: center;
+  }
+  .place-items-end {
+    place-items: end;
+  }
+  .place-items-start {
+    place-items: start;
+  }
+  .place-items-stretch {
+    place-items: stretch;
+  }
   .content-around {
     align-content: space-around;
   }
@@ -311,6 +325,12 @@
   }
   .bg-green-900 {
     background-color: var(--color-green-900);
+  }
+  .bg-pink-300 {
+    background-color: var(--color-pink-300);
+  }
+  .bg-pink-900 {
+    background-color: var(--color-pink-900);
   }
   .bg-purple-300 {
     background-color: var(--color-purple-300);
