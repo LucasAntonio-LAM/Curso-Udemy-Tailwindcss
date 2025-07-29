@@ -1,5 +1,4 @@
 /*! tailwindcss v4.1.11 | MIT License | https://tailwindcss.com */
-@layer properties;
 @layer theme, base, components, utilities;
 @layer theme {
   :root, :host {
@@ -173,33 +172,8 @@
   .m-10 {
     margin: calc(var(--spacing) * 10);
   }
-  .m-50 {
-    margin: calc(var(--spacing) * 50);
-  }
-  .m-100 {
-    margin: calc(var(--spacing) * 100);
-  }
-  .table {
-    display: table;
-  }
-  .border-collapse {
-    border-collapse: collapse;
-  }
-  .resize {
-    resize: both;
-  }
-  .border {
-    border-style: var(--tw-border-style);
-    border-width: 1px;
-  }
   .p-10 {
     padding: calc(var(--spacing) * 10);
-  }
-  .p-50 {
-    padding: calc(var(--spacing) * 50);
-  }
-  .p-100 {
-    padding: calc(var(--spacing) * 100);
   }
   .text-2xl {
     font-size: var(--text-2xl);
@@ -221,13 +195,6 @@
   .text-red-900 {
     color: var(--color-red-900);
   }
-  .underline {
-    text-decoration-line: underline;
-  }
-  .outline {
-    outline-style: var(--tw-outline-style);
-    outline-width: 1px;
-  }
   .tablet\:text-5xl {
     @media (width >= 768px) {
       font-size: var(--text-5xl);
@@ -242,24 +209,6 @@
   .tablet\:text-blue-900 {
     @media (width >= 768px) {
       color: var(--color-blue-900);
-    }
-  }
-}
-@property --tw-border-style {
-  syntax: "*";
-  inherits: false;
-  initial-value: solid;
-}
-@property --tw-outline-style {
-  syntax: "*";
-  inherits: false;
-  initial-value: solid;
-}
-@layer properties {
-  @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
-    *, ::before, ::after, ::backdrop {
-      --tw-border-style: solid;
-      --tw-outline-style: solid;
     }
   }
 }
