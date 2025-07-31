@@ -9,6 +9,9 @@
     --font-serif: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-red-400: oklch(70.4% 0.191 22.216);
+    --color-yellow-400: oklch(85.2% 0.199 91.936);
+    --color-blue-400: oklch(70.7% 0.165 254.624);
     --spacing: 0.25rem;
     --text-xs: 0.75rem;
     --text-xs--line-height: calc(1 / 0.75);
@@ -23,6 +26,10 @@
     --font-weight-semibold: 600;
     --font-weight-bold: 700;
     --font-weight-black: 900;
+    --tracking-tighter: -0.05em;
+    --tracking-widest: 0.1em;
+    --leading-tight: 1.25;
+    --leading-loose: 2;
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
     --font-nunito: "Nunito", sans-serif;
@@ -178,8 +185,14 @@
   .mt-5 {
     margin-top: calc(var(--spacing) * 5);
   }
+  .mb-5 {
+    margin-bottom: calc(var(--spacing) * 5);
+  }
   .table {
     display: table;
+  }
+  .w-64 {
+    width: calc(var(--spacing) * 64);
   }
   .border-collapse {
     border-collapse: collapse;
@@ -190,6 +203,18 @@
   .border {
     border-style: var(--tw-border-style);
     border-width: 1px;
+  }
+  .bg-blue-400 {
+    background-color: var(--color-blue-400);
+  }
+  .bg-red-400 {
+    background-color: var(--color-red-400);
+  }
+  .bg-yellow-400 {
+    background-color: var(--color-yellow-400);
+  }
+  .p-4 {
+    padding: calc(var(--spacing) * 4);
   }
   .font-mono {
     font-family: var(--font-mono);
@@ -226,6 +251,14 @@
   .text-12xl {
     font-size: var(--text-12xl);
   }
+  .leading-loose {
+    --tw-leading: var(--leading-loose);
+    line-height: var(--leading-loose);
+  }
+  .leading-tight {
+    --tw-leading: var(--leading-tight);
+    line-height: var(--leading-tight);
+  }
   .font-black {
     --tw-font-weight: var(--font-weight-black);
     font-weight: var(--font-weight-black);
@@ -237,6 +270,14 @@
   .font-semibold {
     --tw-font-weight: var(--font-weight-semibold);
     font-weight: var(--font-weight-semibold);
+  }
+  .tracking-tighter {
+    --tw-tracking: var(--tracking-tighter);
+    letter-spacing: var(--tracking-tighter);
+  }
+  .tracking-widest {
+    --tw-tracking: var(--tracking-widest);
+    letter-spacing: var(--tracking-widest);
   }
   .italic {
     font-style: italic;
@@ -254,7 +295,15 @@
   inherits: false;
   initial-value: solid;
 }
+@property --tw-leading {
+  syntax: "*";
+  inherits: false;
+}
 @property --tw-font-weight {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-tracking {
   syntax: "*";
   inherits: false;
 }
@@ -267,7 +316,9 @@
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
       --tw-border-style: solid;
+      --tw-leading: initial;
       --tw-font-weight: initial;
+      --tw-tracking: initial;
       --tw-outline-style: solid;
     }
   }
