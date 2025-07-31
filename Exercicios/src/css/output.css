@@ -32,7 +32,6 @@
     --color-blue-950: oklch(28.2% 0.091 267.935);
     --color-purple-800: oklch(43.8% 0.218 303.724);
     --color-pink-700: oklch(52.5% 0.223 3.958);
-    --color-gray-500: oklch(55.1% 0.027 264.364);
     --color-black: #000;
     --color-white: #fff;
     --spacing: 0.25rem;
@@ -252,6 +251,9 @@
   .my-4 {
     margin-block: calc(var(--spacing) * 4);
   }
+  .mt-2 {
+    margin-top: calc(var(--spacing) * 2);
+  }
   .flex {
     display: flex;
   }
@@ -267,9 +269,6 @@
   .table {
     display: table;
   }
-  .h-10 {
-    height: calc(var(--spacing) * 10);
-  }
   .h-17 {
     height: calc(var(--spacing) * 17);
   }
@@ -278,6 +277,9 @@
   }
   .h-25 {
     height: calc(var(--spacing) * 25);
+  }
+  .w-20 {
+    width: calc(var(--spacing) * 20);
   }
   .w-50 {
     width: calc(var(--spacing) * 50);
@@ -318,9 +320,6 @@
   .rounded-2xl {
     border-radius: var(--radius-2xl);
   }
-  .rounded-full {
-    border-radius: calc(infinity * 1px);
-  }
   .border {
     border-style: var(--tw-border-style);
     border-width: 1px;
@@ -342,9 +341,6 @@
   .bg-amber-700 {
     background-color: var(--color-amber-700);
   }
-  .bg-blue-300 {
-    background-color: var(--color-blue-300);
-  }
   .bg-blue-400 {
     background-color: var(--color-blue-400);
   }
@@ -357,14 +353,8 @@
   .bg-blue-700 {
     background-color: var(--color-blue-700);
   }
-  .bg-blue-800 {
-    background-color: var(--color-blue-800);
-  }
   .bg-blue-900 {
     background-color: var(--color-blue-900);
-  }
-  .bg-blue-950 {
-    background-color: var(--color-blue-950);
   }
   .bg-green-600 {
     background-color: var(--color-green-600);
@@ -380,9 +370,6 @@
   }
   .bg-purple-800 {
     background-color: var(--color-purple-800);
-  }
-  .bg-red-300 {
-    background-color: var(--color-red-300);
   }
   .bg-red-400 {
     background-color: var(--color-red-400);
@@ -407,9 +394,6 @@
   }
   .bg-yellow-700 {
     background-color: var(--color-yellow-700);
-  }
-  .bg-yellow-900 {
-    background-color: var(--color-yellow-900);
   }
   .p-2 {
     padding: calc(var(--spacing) * 2);
@@ -449,13 +433,6 @@
   .outline {
     outline-style: var(--tw-outline-style);
     outline-width: 1px;
-  }
-  .hover\:bg-blue-600 {
-    &:hover {
-      @media (hover: hover) {
-        background-color: var(--color-blue-600);
-      }
-    }
   }
   .hover\:bg-blue-800 {
     &:hover {
