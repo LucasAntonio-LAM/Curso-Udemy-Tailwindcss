@@ -16,6 +16,15 @@
     --color-red-800: oklch(44.4% 0.177 26.899);
     --color-yellow-400: oklch(85.2% 0.199 91.936);
     --color-blue-400: oklch(70.7% 0.165 254.624);
+    --color-indigo-100: oklch(93% 0.034 272.788);
+    --color-indigo-200: oklch(87% 0.065 274.039);
+    --color-indigo-300: oklch(78.5% 0.115 274.713);
+    --color-indigo-400: oklch(67.3% 0.182 276.935);
+    --color-indigo-500: oklch(58.5% 0.233 277.117);
+    --color-indigo-600: oklch(51.1% 0.262 276.966);
+    --color-indigo-700: oklch(45.7% 0.24 277.023);
+    --color-indigo-800: oklch(39.8% 0.195 277.366);
+    --color-indigo-900: oklch(35.9% 0.144 278.697);
     --color-purple-300: oklch(82.7% 0.119 306.383);
     --color-purple-400: oklch(71.4% 0.203 305.504);
     --color-purple-500: oklch(62.7% 0.265 303.9);
@@ -30,6 +39,8 @@
     --text-xl--line-height: calc(1.75 / 1.25);
     --text-2xl: 1.5rem;
     --text-2xl--line-height: calc(2 / 1.5);
+    --text-3xl: 1.875rem;
+    --text-3xl--line-height: calc(2.25 / 1.875);
     --text-6xl: 3.75rem;
     --text-6xl--line-height: 1;
     --font-weight-semibold: 600;
@@ -224,6 +235,9 @@
   .mb-5 {
     margin-bottom: calc(var(--spacing) * 5);
   }
+  .mb-10 {
+    margin-bottom: calc(var(--spacing) * 10);
+  }
   .flex {
     display: flex;
   }
@@ -313,6 +327,10 @@
     font-size: var(--text-2xl);
     line-height: var(--tw-leading, var(--text-2xl--line-height));
   }
+  .text-3xl {
+    font-size: var(--text-3xl);
+    line-height: var(--tw-leading, var(--text-3xl--line-height));
+  }
   .text-6xl {
     font-size: var(--text-6xl);
     line-height: var(--tw-leading, var(--text-6xl--line-height));
@@ -362,6 +380,33 @@
   }
   .text-black {
     color: var(--color-black);
+  }
+  .text-indigo-100 {
+    color: var(--color-indigo-100);
+  }
+  .text-indigo-200 {
+    color: var(--color-indigo-200);
+  }
+  .text-indigo-300 {
+    color: var(--color-indigo-300);
+  }
+  .text-indigo-400 {
+    color: var(--color-indigo-400);
+  }
+  .text-indigo-500 {
+    color: var(--color-indigo-500);
+  }
+  .text-indigo-600 {
+    color: var(--color-indigo-600);
+  }
+  .text-indigo-700 {
+    color: var(--color-indigo-700);
+  }
+  .text-indigo-800 {
+    color: var(--color-indigo-800);
+  }
+  .text-indigo-900 {
+    color: var(--color-indigo-900);
   }
   .text-white {
     color: var(--color-white);
