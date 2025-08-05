@@ -170,6 +170,9 @@
   }
 }
 @layer utilities {
+  .mt-5 {
+    margin-top: calc(var(--spacing) * 5);
+  }
   .hidden {
     display: none;
   }
@@ -230,6 +233,21 @@
   }
   .bg-local {
     background-attachment: local;
+  }
+  .bg-bottom {
+    background-position: bottom;
+  }
+  .bg-bottom-right {
+    background-position: right bottom;
+  }
+  .bg-center {
+    background-position: center;
+  }
+  .bg-no-repeat {
+    background-repeat: no-repeat;
+  }
+  .bg-repeat-y {
+    background-repeat: repeat-y;
   }
   .p-10 {
     padding: calc(var(--spacing) * 10);
