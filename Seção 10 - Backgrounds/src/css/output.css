@@ -185,6 +185,15 @@
   .h-48 {
     height: calc(var(--spacing) * 48);
   }
+  .h-64 {
+    height: calc(var(--spacing) * 64);
+  }
+  .h-full {
+    height: 100%;
+  }
+  .h-screen {
+    height: 100vh;
+  }
   .border-collapse {
     border-collapse: collapse;
   }
@@ -227,6 +236,15 @@
   }
   .bg-red-900 {
     background-color: var(--color-red-900);
+  }
+  .bg-auto {
+    background-size: auto;
+  }
+  .bg-contain {
+    background-size: contain;
+  }
+  .bg-cover {
+    background-size: cover;
   }
   .bg-fixed {
     background-attachment: fixed;
