@@ -8,6 +8,8 @@
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
     --color-red-900: oklch(39.6% 0.141 25.723);
+    --color-white: #fff;
+    --spacing: 0.25rem;
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
   }
@@ -161,11 +163,17 @@
   .table {
     display: table;
   }
+  .h-48 {
+    height: calc(var(--spacing) * 48);
+  }
   .border-collapse {
     border-collapse: collapse;
   }
   .resize {
     resize: both;
+  }
+  .overflow-auto {
+    overflow: auto;
   }
   .border {
     border-style: var(--tw-border-style);
@@ -173,6 +181,18 @@
   }
   .bg-red-900 {
     background-color: var(--color-red-900);
+  }
+  .bg-fixed {
+    background-attachment: fixed;
+  }
+  .bg-local {
+    background-attachment: local;
+  }
+  .p-10 {
+    padding: calc(var(--spacing) * 10);
+  }
+  .text-white {
+    color: var(--color-white);
   }
   .underline {
     text-decoration-line: underline;
