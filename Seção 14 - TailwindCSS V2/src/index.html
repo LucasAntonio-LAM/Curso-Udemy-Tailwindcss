@@ -12,7 +12,7 @@
 <body>
     <!--DARK MODE MANUAL-->
     <div class="m-4">
-        <button id="dark-mode" class="bg-red-400 text-white rounded py-2 px-4 hover:bg-red-600 cursor-pointer">Ativar/Desativar DARKMODE</button>
+        <button id="dark-mode" class="bg-red-400 text-white rounded py-2 px-4 hover:bg-red-600 cursor-pointer dark:bg-blue-600 dark:hover:bg-blue-900">Ativar/Desativar DARKMODE</button>
     </div>
     <!-- CORES -->
     <div class="bg-amber-500 text-white font-bold text-center p-10">
@@ -29,7 +29,7 @@
     </div>
 
     <!-- DARK MODE -->
-    <div class="bg-red-50 text-black font-bold text-center p-10 dark:bg-blue-800 dark:text-white">
+    <div class="bg-red-50 text-black font-bold text-center p-10 dark:bg-blue-800 dark:text-white md:dark:bg-blue-900 sm:dark:bg-red-900">
         <p>DarkMode Exemplo</p>
     </div>
     <div class="bg-red-50 text-black font-bold text-center p-10 dark:bg-gray-800 dark:text-white">
@@ -39,6 +39,17 @@
         <p>DarkMode Exemplo</p>
     </div>
 
+    <!-- Outros recursos do DarkMode-->
+    
+    <!-- RING -->
+
+    <div class="m-6">
+        <button class="py-2 px-4 bg-amber-400 text-white text-center rounded ring-4 ring-amber-600 cursor-pointer hover:bg-amber-600">RingExterno</button>
+        <button class="py-2 px-4 mx-4 bg-rose-500 text-white text-center rounded-full ring-4 ring-rose-700 ring-inset cursor-pointer hover:bg-amber-600">RingInterno</button>
+        <button class="py-2 px-4 mx-4 bg-blue-500 text-white text-center rounded-full ring-4 focus:ring-blue-700 ring-inset cursor-pointer hover:bg-blue-600 focus:outline-none">RingInterno</button>
+    </div>
+
+    
     
 </body>
 
